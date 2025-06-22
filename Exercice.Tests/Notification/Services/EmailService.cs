@@ -13,4 +13,9 @@ public class EmailService : IEmailService
     {
         throw new NotImplementedException();
     }
+
+    public void SendWelcomeEmail(string email, string name)
+    {
+        throw new NotImplementedException();
+    }
 }

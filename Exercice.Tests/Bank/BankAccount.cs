@@ -4,6 +4,8 @@ public class BankAccount : IBankAccount
 {
     private decimal Balance { get; set; }
     public string AccountNumber { get; set; }
+    public List<string> TransactionHistory { get; private set; }
+
 
     public BankAccount(string accountNumber, decimal initialBalance = decimal.Zero)
     {
@@ -15,6 +17,7 @@ public class BankAccount : IBankAccount
         
         AccountNumber = accountNumber;
         Balance = initialBalance;
+        TransactionHistory = new();
     }
     
     public void Deposit(decimal amount)
@@ -39,5 +42,6 @@ public class BankAccount : IBankAccount
             
         Balance -= amount;
         destinationAccount.Balance += amount;
+        TransactionHistory.Add($"Transfert: -{amount:C}");
     }
 }

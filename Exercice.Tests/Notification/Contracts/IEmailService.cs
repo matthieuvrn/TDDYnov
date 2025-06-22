@@ -17,4 +17,11 @@ public interface IEmailService
     /// <param name="email">The email address to validate.</param>
     /// <returns>Returns true if the email is valid, otherwise false.</returns>
     bool IsValidEmail(string email);
+
+    /// <summary>
+    /// Sends a welcome email to the specified recipient.
+    /// </summary>
+    /// <param name="email">The email address of the recipient.</param>
+    /// <param name="name">The name of the recipient.</param>
+    void SendWelcomeEmail(string email, string name);
 }

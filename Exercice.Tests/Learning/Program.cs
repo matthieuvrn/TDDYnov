@@ -1,3 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+using Learning;
+
+var validator = new EmailValidator();
+bool isValid = validator.IsValidEmailWithPattern("exemple@domaine.com");
+
+Console.WriteLine(isValid);

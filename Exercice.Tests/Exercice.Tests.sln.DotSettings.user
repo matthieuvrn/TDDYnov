@@ -2,4 +2,4 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe2937de_002D4422_002D4a71_002D9728_002Dbcfa6758af29/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Add_WithTwoPositiveNumbers_ShouldReturnSum" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/abdoulayekake/Library/Caches/JetBrains/Rider2025.1/resharper-host/temp/Rider/vAny/CoverageData/_Exercice.Tests.1942528929/Snapshot/snapshot.utdcvr</s:String></wpf:ResourceDictionary>
+	</wpf:ResourceDictionary>

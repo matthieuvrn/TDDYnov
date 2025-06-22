@@ -95,6 +95,5 @@ public class NotificationServiceTest
         _smsServiceMock.Verify(x => x.SendSmsAsync(phone, message), Times.Once);
     }
     
-    // TODO: Ajoutez d'autres tests
 
 }
