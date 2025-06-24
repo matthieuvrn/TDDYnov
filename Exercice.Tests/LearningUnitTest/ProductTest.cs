@@ -20,8 +20,8 @@ public class ProductTest
         product.IsActive.Should().BeFalse();
         product.Tags.Should().NotBeNull().And.BeEmpty();
     }
-    
-      [Theory]
+
+    [Theory]
     [InlineData(50, false)]
     [InlineData(100, false)]
     [InlineData(101, true)]
@@ -32,7 +32,7 @@ public class ProductTest
         var product = new Product { Price = price };
 
         // Act & Assert with FluentAssertions
-       
+        product.IsExpensive().Should().Be(expected);
     }
 
     [Fact]
@@ -42,6 +42,7 @@ public class ProductTest
         var product = new Product { CreatedAt = DateTime.Now.AddDays(-15) };
 
         // Act & Assert with FluentAssertions
+        product.IsNew().Should().BeTrue();
     }
 
     [Fact]
@@ -51,7 +52,7 @@ public class ProductTest
         var product = new Product { CreatedAt = DateTime.Now.AddDays(-45) };
 
         // Act & Assert with FluentAssertions
-      
+        product.IsNew().Should().BeFalse();
     }
 
     [Theory]
@@ -60,7 +61,14 @@ public class ProductTest
     [InlineData(50, 50)]
     public void ApplyDiscount_ValidPercentage_ShouldReducePrice(decimal discount, decimal expectedPrice)
     {
+        // Arrange
+        var product = new Product { Price = 100 };
 
+        // Act
+        product.ApplyDiscount(discount);
+
+        // Assert with FluentAssertions
+        product.Price.Should().Be(expectedPrice);
     }
 
     [Theory]
