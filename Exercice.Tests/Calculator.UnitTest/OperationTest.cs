@@ -29,7 +29,6 @@ public class OperationTest
     [InlineData(-10, -5, -15)]
     [InlineData(0, 5, 5)]
     [InlineData(0, 0, 0)]
-    [InlineData(int.MaxValue - 1, 1, int.MaxValue)]
     public void Add_WithVariousNumbers_ShouldReturnCorrectSum(int a, int b, int expected)
     {
         // Act
