@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{DFFB9856-376C-4C3E-AB69-FF183C3C2A8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercice1", "Exercice1", "{7FB227F2-87F0-4D31-95F0-AAFD52EFC89E}"
@@ -35,6 +38,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.UnitTest", "Notification.UnitTest\Notification.UnitTest.csproj", "{705AF0C9-E9AC-47A0-A24D-5D12480F0466}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning", "Learning\Learning.csproj", "{80F3E06C-24B3-44C7-9495-C53783EFEEEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TP_Tournoi", "TP_Tournoi", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TournamentScoring", "TournamentScoring\TournamentScoring.csproj", "{6F45D395-BB8F-4ABF-B8CF-EA993041F781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TournamentScoring.Tests", "TournamentScoring.Tests\TournamentScoring.Tests.csproj", "{65752180-8899-416D-852F-AE357EF5CB6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -90,6 +99,17 @@ Global
 		{80F3E06C-24B3-44C7-9495-C53783EFEEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80F3E06C-24B3-44C7-9495-C53783EFEEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80F3E06C-24B3-44C7-9495-C53783EFEEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F45D395-BB8F-4ABF-B8CF-EA993041F781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F45D395-BB8F-4ABF-B8CF-EA993041F781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F45D395-BB8F-4ABF-B8CF-EA993041F781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F45D395-BB8F-4ABF-B8CF-EA993041F781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65752180-8899-416D-852F-AE357EF5CB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65752180-8899-416D-852F-AE357EF5CB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65752180-8899-416D-852F-AE357EF5CB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65752180-8899-416D-852F-AE357EF5CB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DFFB9856-376C-4C3E-AB69-FF183C3C2A8B} = {7FB227F2-87F0-4D31-95F0-AAFD52EFC89E}
@@ -104,5 +124,10 @@ Global
 		{0254661C-BD7D-4DCB-9309-6783BE41C414} = {EA426A84-DDD4-468D-9BB6-84E3FF63CA68}
 		{705AF0C9-E9AC-47A0-A24D-5D12480F0466} = {EA426A84-DDD4-468D-9BB6-84E3FF63CA68}
 		{80F3E06C-24B3-44C7-9495-C53783EFEEEC} = {635B9251-162C-499F-B11A-E50B9312A426}
+		{6F45D395-BB8F-4ABF-B8CF-EA993041F781} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{65752180-8899-416D-852F-AE357EF5CB6B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F78BC8B-8DCD-49C4-9D5B-AAD78A337B48}
 	EndGlobalSection
 EndGlobal
